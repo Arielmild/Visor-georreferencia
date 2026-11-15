@@ -1,0 +1,14 @@
+{
+  "frente": {
+    "archivo": "assets/parquimetro-frente.glb",
+    "base_y_m": -0.1,
+    "rumbo_base_deg": 90,
+    "radio_m": 8.3
+  },
+  "paralelo": {
+    "archivo": "assets/parquimetro-paralelo.glb",
+    "base_y_m": -0.1,
+    "rumbo_base_deg": 90,
+    "radio_m": 6.6
+  }
+}

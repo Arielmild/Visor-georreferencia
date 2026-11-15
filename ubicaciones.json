@@ -1,0 +1,2604 @@
+{
+  "modo": "comunal",
+  "estaciones": [
+    {
+      "id": "P001",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Alfredo Barros Errázuriz",
+      "tramo": "Carlos Antúnez - Pedro de Valdivia",
+      "referencia": {
+        "latitud": -33.42717,
+        "longitud": -70.613056
+      },
+      "criterio": "Coordenadas fijadas por el usuario",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P002",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Juana de Arco",
+      "tramo": "Pedro de Valdivia - Guardia Vieja",
+      "referencia": {
+        "latitud": -33.426782,
+        "longitud": -70.611032
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P003",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Guardia Vieja",
+      "tramo": "Juana de Arco - Europa",
+      "referencia": {
+        "latitud": -33.426657,
+        "longitud": -70.609072
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P004",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Europa Oriente",
+      "tramo": "Guardia Vieja - Pedro de Valdivia",
+      "referencia": {
+        "latitud": -33.427779,
+        "longitud": -70.61066
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P005",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Europa Poniente",
+      "tramo": "Pedro de Valdivia - Marchant Pereira",
+      "referencia": {
+        "latitud": -33.42832,
+        "longitud": -70.612474
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P006",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Jorge Isaacs",
+      "tramo": "Guardia Vieja - Ricardo Lyon",
+      "referencia": {
+        "latitud": -33.425422,
+        "longitud": -70.609419
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P007",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Darío Urzúa Poniente",
+      "tramo": "Marchant Pereira - Eliodoro Yáñez",
+      "referencia": {
+        "latitud": -33.431862,
+        "longitud": -70.61515
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P008",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Antonio Varas",
+      "tramo": "Dr. Solís de Ovando - Eliodoro Yáñez",
+      "referencia": {
+        "latitud": -33.43174,
+        "longitud": -70.616188
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P009",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Federico Froebel",
+      "tramo": "Antonio Varas - Matilde Salamanca",
+      "referencia": {
+        "latitud": -33.433615,
+        "longitud": -70.615435
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P010",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Mar del Plata",
+      "tramo": "Pedro de Valdivia - Ricardo Lyon",
+      "referencia": {
+        "latitud": -33.433101,
+        "longitud": -70.608839
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P011",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Valenzuela Castillo",
+      "tramo": "Miguel Claro - Matilde Salamanca",
+      "referencia": {
+        "latitud": -33.435148,
+        "longitud": -70.617909
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P012",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Antonio Varas",
+      "tramo": "Dr. Solís de Ovando - Dr. Luis Middleton",
+      "referencia": {
+        "latitud": -33.429829,
+        "longitud": -70.616813
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P013",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Antonio Varas",
+      "tramo": "Valenzuela Castillo - Federico Froebel",
+      "referencia": {
+        "latitud": -33.433745,
+        "longitud": -70.615524
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P014",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Dr. Luis Middleton",
+      "tramo": "Carlos Antúnez - Antonio Varas",
+      "referencia": {
+        "latitud": -33.428342,
+        "longitud": -70.617184
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P015",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "José Manuel Infante Norte",
+      "tramo": "Providencia - Eliodoro Yáñez",
+      "referencia": {
+        "latitud": -33.432916,
+        "longitud": -70.623561
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P016",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Román Díaz",
+      "tramo": "Alférez Real - Cano y Aponte",
+      "referencia": {
+        "latitud": -33.438106,
+        "longitud": -70.620198
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P017",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Cano y Aponte",
+      "tramo": "Joel Rodríguez - José M. Infante",
+      "referencia": {
+        "latitud": -33.438295,
+        "longitud": -70.62151
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P018",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "José Manuel Infante Sur",
+      "tramo": "Dr. Hernán Alessandri - Cano y Aponte",
+      "referencia": {
+        "latitud": -33.438257,
+        "longitud": -70.621813
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P019",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Monseñor Carlos Casanueva",
+      "tramo": "Los Navegantes - El Comendador",
+      "referencia": {
+        "latitud": -33.420254,
+        "longitud": -70.618171
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P020",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Fernando Manterola Oriente",
+      "tramo": "Calle del Arzobispo - Magallanes",
+      "referencia": {
+        "latitud": -33.431431,
+        "longitud": -70.627597
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P021",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Fernando Manterola Centro",
+      "tramo": "Magallanes - Capellán Abarzúa",
+      "referencia": {
+        "latitud": -33.432725,
+        "longitud": -70.629033
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P022",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Fernando Manterola Poniente",
+      "tramo": "Capellán Abarzúa - Ruiz de Gamboa",
+      "referencia": {
+        "latitud": -33.433133,
+        "longitud": -70.629621
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P023",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Magallanes",
+      "tramo": "Bellavista - Santa María",
+      "referencia": {
+        "latitud": -33.431117,
+        "longitud": -70.628322
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P024",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Emeterio Larraín Bunster",
+      "tramo": "Los Conquistadores - El Cerro",
+      "referencia": {
+        "latitud": -33.421965,
+        "longitud": -70.619871
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P025",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Torre Santa María",
+      "tramo": "Los Conquistadores - El Cerro",
+      "referencia": {
+        "latitud": -33.423633,
+        "longitud": -70.622774
+      },
+      "criterio": "Referencia en superficie de estacionamiento cartografiada junto al conjunto",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P026",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Joel Rodríguez",
+      "tramo": "Cano y Aponte - José M. Infante",
+      "referencia": {
+        "latitud": -33.437737,
+        "longitud": -70.621051
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P027",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Capellán Abarzúa",
+      "tramo": "Bellavista - Santa María",
+      "referencia": {
+        "latitud": -33.432525,
+        "longitud": -70.629679
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P028",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Mallinkrodt Oriente",
+      "tramo": "Nueva Dardignac - Bellavista",
+      "referencia": {
+        "latitud": -33.432898,
+        "longitud": -70.63336
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P029",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Mallinkrodt Poniente",
+      "tramo": "Antonia López de Bello - Bellavista",
+      "referencia": {
+        "latitud": -33.432542,
+        "longitud": -70.633503
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P030",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Providencia Poniente",
+      "tramo": "Los Leones - Holanda",
+      "referencia": {
+        "latitud": -33.419862,
+        "longitud": -70.605732
+      },
+      "criterio": "Inicio en la conexión Los Leones–Providencia, a 7,3 m del nodo de Los Leones",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P031",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Providencia Centro",
+      "tramo": "Luis Thayer Ojeda - Holanda",
+      "referencia": {
+        "latitud": -33.419263,
+        "longitud": -70.60413
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P032",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Holanda Centro",
+      "tramo": "Providencia - San Pío X",
+      "referencia": {
+        "latitud": -33.419409,
+        "longitud": -70.604201
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P033",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Holanda Sur",
+      "tramo": "San Pío X - Lota",
+      "referencia": {
+        "latitud": -33.421097,
+        "longitud": -70.603451
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P034",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Hernando de Aguirre",
+      "tramo": "San Pío X - Lota",
+      "referencia": {
+        "latitud": -33.420324,
+        "longitud": -70.600776
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P035",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "San Pío X Oriente",
+      "tramo": "Luis Thayer Ojeda - Hernando de Aguirre",
+      "referencia": {
+        "latitud": -33.420516,
+        "longitud": -70.601836
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P036",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "San Pío X Centro",
+      "tramo": "Holanda - Luis Thayer Ojeda",
+      "referencia": {
+        "latitud": -33.420962,
+        "longitud": -70.603371
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P037",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "San Pío X Poniente",
+      "tramo": "Holanda - Los Leones",
+      "referencia": {
+        "latitud": -33.421479,
+        "longitud": -70.605101
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P038",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Lota Poniente",
+      "tramo": "Los Leones - Suecia",
+      "referencia": {
+        "latitud": -33.423648,
+        "longitud": -70.60663
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P039",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Lota Oriente",
+      "tramo": "Holanda - Los Leones",
+      "referencia": {
+        "latitud": -33.423153,
+        "longitud": -70.604421
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P040",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Josué Smith Solar",
+      "tramo": "Lota - Carmen Sylva",
+      "referencia": {
+        "latitud": -33.423589,
+        "longitud": -70.605867
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P041",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Adelaida La Fetra",
+      "tramo": "Los Leones - Josué Smith Solar",
+      "referencia": {
+        "latitud": -33.424098,
+        "longitud": -70.605576
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ],
+      "motivo_modelos": "OpenStreetMap registra estacionamiento paralelo y un ancho de vía de 5 m en Adelaida La Fetra. Mantén la propuesta paralela hasta comprobar el espacio disponible en terreno.",
+      "fuente_modelos": "https://www.openstreetmap.org/way/30595159"
+    },
+    {
+      "id": "P042",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Dr. Carlos Charlín Poniente",
+      "tramo": "Almte. Pastene - Gral. Calderón",
+      "referencia": {
+        "latitud": -33.426301,
+        "longitud": -70.621143
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P043",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Dr. Carlos Charlín Oriente",
+      "tramo": "Gral. Calderón - Antonio Bellet",
+      "referencia": {
+        "latitud": -33.425395,
+        "longitud": -70.620672
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P044",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Antonio Bellet Norte",
+      "tramo": "Andrés Bello - Pérez Valenzuela",
+      "referencia": {
+        "latitud": -33.424415,
+        "longitud": -70.619442
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P045",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Antonio Bellet Sur",
+      "tramo": "Pérez Valenzuela - Providencia",
+      "referencia": {
+        "latitud": -33.425536,
+        "longitud": -70.618171
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P046",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Pérez Valenzuela Oriente",
+      "tramo": "Padre Mariano - Antonio Bellet",
+      "referencia": {
+        "latitud": -33.424412,
+        "longitud": -70.619268
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P047",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Pérez Valenzuela Centro",
+      "tramo": "Antonio Bellet - Gral. Calderón",
+      "referencia": {
+        "latitud": -33.425464,
+        "longitud": -70.619904
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P048",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Padre Mariano",
+      "tramo": "Andrés Bello - Fco. A. Encina",
+      "referencia": {
+        "latitud": -33.424237,
+        "longitud": -70.617974
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P049",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Almirante Pastene",
+      "tramo": "Andrés Bello - Pérez Valenzuela",
+      "referencia": {
+        "latitud": -33.426226,
+        "longitud": -70.621819
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P050",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Pérez Valenzuela",
+      "tramo": "Séptimo de Línea - Andrés Bello",
+      "referencia": {
+        "latitud": -33.428978,
+        "longitud": -70.62221
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P051",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Manuel Montt",
+      "tramo": "Andrés Bello - Pérez Valenzuela",
+      "referencia": {
+        "latitud": -33.427769,
+        "longitud": -70.621622
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P052",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Italia Poniente",
+      "tramo": "Francisco Bilbao - Marín",
+      "referencia": {
+        "latitud": -33.442866,
+        "longitud": -70.626098
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P053",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Italia Poniente",
+      "tramo": "Santa Isabel - Marín",
+      "referencia": {
+        "latitud": -33.444806,
+        "longitud": -70.62554
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P054",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Italia Poniente",
+      "tramo": "Santa Isabel - Caupolicán",
+      "referencia": {
+        "latitud": -33.446759,
+        "longitud": -70.624977
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P055",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Italia Oriente",
+      "tramo": "Caupolicán - Santa Isabel",
+      "referencia": {
+        "latitud": -33.446864,
+        "longitud": -70.624947
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P056",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Italia Oriente",
+      "tramo": "Santa Isabel - Marín",
+      "referencia": {
+        "latitud": -33.44491,
+        "longitud": -70.62551
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P057",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Italia Oriente",
+      "tramo": "Luis Montaner - Marín",
+      "referencia": {
+        "latitud": -33.443275,
+        "longitud": -70.625979
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P058",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Poniente",
+      "tramo": "Francisco Bilbao - Alfredo Rioseco",
+      "referencia": {
+        "latitud": -33.442121,
+        "longitud": -70.627275
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P059",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Poniente",
+      "tramo": "Alfredo Rioseco - Abelardo Pizarro",
+      "referencia": {
+        "latitud": -33.442656,
+        "longitud": -70.627123
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P060",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Poniente",
+      "tramo": "Claudio Arrau - Marín",
+      "referencia": {
+        "latitud": -33.444149,
+        "longitud": -70.626697
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P061",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Poniente",
+      "tramo": "Claudio Arrau - Santa Victoria",
+      "referencia": {
+        "latitud": -33.444878,
+        "longitud": -70.626485
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P062",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Poniente",
+      "tramo": "Santa Victoria - Santa Isabel",
+      "referencia": {
+        "latitud": -33.445664,
+        "longitud": -70.626259
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P063",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Poniente",
+      "tramo": "Santa Isabel - Caupolicán",
+      "referencia": {
+        "latitud": -33.447128,
+        "longitud": -70.625833
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P064",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Oriente",
+      "tramo": "Caupolicán - Santa Isabel",
+      "referencia": {
+        "latitud": -33.447222,
+        "longitud": -70.625805
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P065",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Oriente",
+      "tramo": "Santa Isabel - Marín",
+      "referencia": {
+        "latitud": -33.445021,
+        "longitud": -70.626444
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P066",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell Oriente",
+      "tramo": "Marín - Francisco Bilbao",
+      "referencia": {
+        "latitud": -33.44289,
+        "longitud": -70.627055
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P067",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Caupolicán",
+      "tramo": "Condell - Italia",
+      "referencia": {
+        "latitud": -33.448553,
+        "longitud": -70.625278
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P068",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Caupolicán",
+      "tramo": "Italia - Girardi",
+      "referencia": {
+        "latitud": -33.448379,
+        "longitud": -70.624371
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P069",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Luis Montaner",
+      "tramo": "Italia - Salvador",
+      "referencia": {
+        "latitud": -33.442879,
+        "longitud": -70.624277
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P070",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Almirante Simpson",
+      "tramo": "Ramón Carnicer - Vicuña Mackenna",
+      "referencia": {
+        "latitud": -33.438772,
+        "longitud": -70.633402
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P071",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Ramón Carnicer",
+      "tramo": "Providencia - Eulogia Sánchez",
+      "referencia": {
+        "latitud": -33.437668,
+        "longitud": -70.633536
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P072",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Bustamante",
+      "tramo": "Juana de Lestonac - Providencia",
+      "referencia": {
+        "latitud": -33.438424,
+        "longitud": -70.632419
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P073",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Bustamante",
+      "tramo": "Rancagua - Juana de Lestonac",
+      "referencia": {
+        "latitud": -33.439578,
+        "longitud": -70.63181
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P074",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Condell",
+      "tramo": "Providencia - Rancagua",
+      "referencia": {
+        "latitud": -33.438854,
+        "longitud": -70.627603
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P075",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Madre Victoria Larrocque",
+      "tramo": "Condell - Sin Salida",
+      "referencia": {
+        "latitud": -33.435658,
+        "longitud": -70.628192
+      },
+      "criterio": "Subtramo vehicular desde Condell hasta el inicio del paseo peatonal",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P076",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Vicuña Mackenna",
+      "tramo": "Eulogia Sánchez - Almirante Simpson",
+      "referencia": {
+        "latitud": -33.439185,
+        "longitud": -70.634679
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P077",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "De la Ollería",
+      "tramo": "Rafael Cañas - Huelén",
+      "referencia": {
+        "latitud": -33.432484,
+        "longitud": -70.622748
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P078",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Rafael Cañas",
+      "tramo": "Providencia - De la Ollería",
+      "referencia": {
+        "latitud": -33.432404,
+        "longitud": -70.623007
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P079",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Román Díaz",
+      "tramo": "Providencia - Eliodoro Yáñez",
+      "referencia": {
+        "latitud": -33.432221,
+        "longitud": -70.621424
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P080",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Huelén Poniente",
+      "tramo": "De la Ollería - Providencia",
+      "referencia": {
+        "latitud": -33.432131,
+        "longitud": -70.62262
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P081",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Huelén Oriente",
+      "tramo": "De la Ollería - Providencia",
+      "referencia": {
+        "latitud": -33.432035,
+        "longitud": -70.622677
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P082",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "General Bari",
+      "tramo": "General Salvo Norte - General Salvo Sur",
+      "referencia": {
+        "latitud": -33.434738,
+        "longitud": -70.624717
+      },
+      "criterio": "Recorrido entre las conexiones exteriores norte y sur con General Salvo",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P083",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "General Parra",
+      "tramo": "José M. Infante - General Salvo",
+      "referencia": {
+        "latitud": -33.434222,
+        "longitud": -70.624395
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P084",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "General Salvo",
+      "tramo": "José M. Infante - Providencia",
+      "referencia": {
+        "latitud": -33.433993,
+        "longitud": -70.624849
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P085",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Almirante Zegers",
+      "tramo": "General Salvo - José M. Infante",
+      "referencia": {
+        "latitud": -33.434448,
+        "longitud": -70.624181
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P086",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Torres de Tajamar",
+      "tramo": "Huelén - Providencia",
+      "referencia": {
+        "latitud": -33.430115,
+        "longitud": -70.624043
+      },
+      "criterio": "Referencia en superficie de estacionamiento cartografiada junto al conjunto",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "P087",
+      "tipo": "parquimetro",
+      "modelos": [
+        "paralelo",
+        "frente"
+      ],
+      "fuente": "ubis parquímetros.csv",
+      "calle": "Bravo",
+      "tramo": "Eliodoro Yáñez - José M. Infante",
+      "referencia": {
+        "latitud": -33.434014,
+        "longitud": -70.622493
+      },
+      "criterio": "Referencia sobre el eje del tramo entre los cruces",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "PL001",
+      "tipo": "plaza",
+      "modelos": [
+        "frente"
+      ],
+      "fuente": "ubis plazas.csv",
+      "calle": "Av. Pocuro 3089 (Parque Augusto Errázuriz)",
+      "tramo": "Av. Pocuro 3089, Providencia",
+      "referencia": {
+        "latitud": -33.43043,
+        "longitud": -70.586957
+      },
+      "criterio": "Referencia preliminar del listado de plazas",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "PL002",
+      "tipo": "plaza",
+      "modelos": [
+        "frente"
+      ],
+      "fuente": "ubis plazas.csv",
+      "calle": "Plaza Río de Janeiro",
+      "tramo": "La Brabanzón / Río de Janeiro, Providencia",
+      "referencia": {
+        "latitud": -33.431882,
+        "longitud": -70.5941
+      },
+      "criterio": "Referencia preliminar del listado de plazas",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "PL003",
+      "tipo": "plaza",
+      "modelos": [
+        "frente"
+      ],
+      "fuente": "ubis plazas.csv",
+      "calle": "2850 Marcel Duhaut",
+      "tramo": "Marcel Duhaut 2850, Providencia",
+      "referencia": {
+        "latitud": -33.428828,
+        "longitud": -70.594211
+      },
+      "criterio": "Referencia preliminar del listado de plazas",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "PL004",
+      "tipo": "plaza",
+      "modelos": [
+        "frente"
+      ],
+      "fuente": "ubis plazas.csv",
+      "calle": "Plaza de la Alcaldesa",
+      "tramo": "Av. Francisco Bilbao / Av. Los Leones",
+      "referencia": {
+        "latitud": -33.435718,
+        "longitud": -70.600716
+      },
+      "criterio": "Referencia preliminar del listado de plazas",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "PL005",
+      "tipo": "plaza",
+      "modelos": [
+        "frente"
+      ],
+      "fuente": "ubis plazas.csv",
+      "calle": "Plaza Pedro de Valdivia",
+      "tramo": "Av. Pedro de Valdivia 1761, Providencia",
+      "referencia": {
+        "latitud": -33.439123,
+        "longitud": -70.607975
+      },
+      "criterio": "Referencia preliminar del listado de plazas",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    },
+    {
+      "id": "PL006",
+      "tipo": "plaza",
+      "modelos": [
+        "frente"
+      ],
+      "fuente": "ubis plazas.csv",
+      "calle": "Parque Inés de Suárez",
+      "tramo": "Antonio Varas 1510, Providencia",
+      "referencia": {
+        "latitud": -33.441792,
+        "longitud": -70.611835
+      },
+      "criterio": "Referencia preliminar del listado de plazas",
+      "ajuste": {
+        "orientacion": 0.0,
+        "este_m": 0.0,
+        "norte_m": 0.0,
+        "altitud_relativa_m": 1.0
+      },
+      "provisionales": [
+        "orientacion",
+        "este_m",
+        "norte_m",
+        "altitud_relativa_m"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recarga en Providencia · Visor 3D</title>
+  <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.146/Build/Cesium/Widgets/widgets.css">
+  <link rel="stylesheet" href="./visor.css">
+  <script defer src="https://cesium.com/downloads/cesiumjs/releases/1.146/Build/Cesium/Cesium.js"></script>
+  <script type="module" src="./visor.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="symbol" aria-hidden="true">ϟ</span>
+      <div><h1>Recarga en Providencia</h1><p>Emplazamientos preliminares</p></div>
+    </div>
+    <button id="compartir" type="button" disabled>Copiar enlace</button>
+  </header>
+  <main>
+    <aside aria-label="Ubicaciones y ajustes">
+      <section class="listado">
+        <h2>Ubicaciones <span id="cantidad"></span></h2>
+        <div class="filtros">
+          <label class="busqueda"><span>Buscar calle, plaza o ID</span><input id="buscar" type="search" placeholder="Ej. P002" disabled></label>
+          <label class="busqueda"><span>Tipo</span><select id="tipo" disabled>
+            <option value="">Todos</option>
+            <option value="parquimetro">Parquímetros</option>
+            <option value="plaza">Plazas</option>
+          </select></label>
+        </div>
+        <div id="estaciones" class="estaciones"></div>
+      </section>
+      <section id="ficha" hidden>
+        <p class="codigo" id="codigo"></p>
+        <h2 id="calle"></h2>
+        <p class="tramo" id="tramo"></p>
+        <p id="referencia" class="coordenadas"></p>
+        <p id="criterio" class="detalle"></p>
+        <fieldset id="configuraciones">
+          <legend>Configuración del modelo</legend>
+          <div id="variantes" class="variantes"></div>
+          <p id="viabilidad" class="detalle"></p>
+        </fieldset>
+        <details open>
+          <summary>Ajuste de la propuesta</summary>
+          <form id="ajustes">
+            <div class="campos">
+              <label>Orientación (°)<input name="orientacion" type="number" min="0" max="360" step="any" required></label>
+              <label>Altitud relativa (m)<input name="altitud_relativa_m" type="number" min="-10000" max="10000" step="any" required></label>
+              <label>Este / Oeste (m)<input name="este_m" type="number" min="-10000" max="10000" step="any" required></label>
+              <label>Norte / Sur (m)<input name="norte_m" type="number" min="-10000" max="10000" step="any" required></label>
+            </div>
+            <p class="detalle">0° al norte, giro horario. Usa valores negativos para oeste, sur y debajo del terreno. El enlace conserva los ajustes de la configuración seleccionada.</p>
+            <div class="acciones">
+              <button type="submit" class="primary">Aplicar</button>
+              <button id="restaurar" type="button">Restablecer</button>
+            </div>
+            <p id="posicion" class="coordenadas"></p>
+          </form>
+        </details>
+      </section>
+    </aside>
+    <section class="mapa" aria-label="Mapa 3D">
+      <div id="globo"></div>
+      <div class="herramientas">
+        <button id="general" type="button" disabled>Vista general</button>
+        <button id="acercar" type="button" disabled>Acercar al modelo</button>
+        <label><input id="marcadores" type="checkbox" checked disabled> Marcadores</label>
+        <label><input id="modelos" type="checkbox" checked disabled> Modelo 3D</label>
+      </div>
+      <div class="mapa-info">
+        <div><span class="punto" aria-hidden="true"></span> <span id="terreno">Cargando mapa…</span></div>
+        <div id="leyenda" class="leyenda" hidden><span><i class="punto" aria-hidden="true"></i> Parquímetro</span><span><i class="punto plaza" aria-hidden="true"></i> Plaza</span></div>
+        <output id="estado" role="status" aria-live="polite"></output>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
