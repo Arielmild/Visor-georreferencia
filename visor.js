@@ -69,7 +69,10 @@ async function main() {
   }
   const variantOf = (site) => choices.get(site.id) ?? site.modelos[0];
   const values = (site) => overrides.get(adjustmentKey(site, variantOf(site))) ?? site.ajuste;
-  const status = (message) => { el("estado").textContent = message; };
+  const status = (message) => {
+    const output = el("estado");
+    if (output.textContent !== message) output.textContent = message;
+  };
   C.Ion.defaultAccessToken = undefined;
 
   const viewer = new C.Viewer("globo", {
@@ -118,6 +121,10 @@ async function main() {
   let terrain;
   let flightVersion = 0;
   const form = el("ajustes");
+  const headingInput = form.elements.namedItem("orientacion");
+  const dial = el("perilla");
+  let pointer;
+  let previewHeading;
 
   function placement(site) {
     const { longitud, latitud } = site.referencia;
@@ -133,7 +140,8 @@ async function main() {
       coord.longitude, coord.latitude, adjustment.altitud_relativa_m - model.base_y_m,
     );
     const atSite = C.Transforms.eastNorthUpToFixedFrame(origin);
-    const turn = C.Matrix3.fromRotationZ(C.Math.toRadians(model.rumbo_base_deg - adjustment.orientacion));
+    const heading = previewHeading ?? adjustment.orientacion;
+    const turn = C.Matrix3.fromRotationZ(C.Math.toRadians(model.rumbo_base_deg - heading));
     const matrix = C.Matrix4.multiplyByMatrix3(atSite, turn, new C.Matrix4());
     return { matrix, coord, altitude: adjustment.altitud_relativa_m };
   }
@@ -164,6 +172,7 @@ async function main() {
 
   function updateModel() {
     const active = detail && selected && el("modelos").checked;
+    el("giro").hidden = !active;
     const variant = active ? variantOf(selected) : null;
     const current = modelos.get(variant);
     for (const [key, { model }] of modelos) {
@@ -232,8 +241,11 @@ async function main() {
   }
 
   function populateForm() {
+    pointer = undefined;
+    previewHeading = undefined;
     const adjustment = values(selected);
     for (const key of Object.keys(fields)) form.elements.namedItem(key).value = adjustment[key];
+    drawHeading(adjustment.orientacion);
     updatePosition();
   }
 
@@ -370,6 +382,75 @@ async function main() {
     populateForm();
     focus();
   }
+
+  function drawHeading(heading) {
+    dial.style.setProperty("--rumbo", `${heading}deg`);
+    el("giro-grados").textContent = `${heading}°`;
+    dial.setAttribute("aria-valuenow", heading);
+    dial.setAttribute("aria-valuetext", `${heading} grados`);
+  }
+
+  function previewRotation(heading) {
+    previewHeading = heading;
+    headingInput.value = heading;
+    drawHeading(heading);
+    updateModel();
+  }
+
+  function commitRotation(heading) {
+    const key = adjustmentKey(selected, variantOf(selected));
+    overrides.set(key, { ...values(selected), orientacion: heading });
+    previewHeading = undefined;
+    saveLocal();
+    updateLink();
+    headingInput.value = heading;
+    drawHeading(heading);
+    updateModel();
+  }
+
+  function aimDial(event) {
+    const { left, top, width, height } = dial.getBoundingClientRect();
+    const x = event.clientX - left - width / 2;
+    const y = event.clientY - top - height / 2;
+    if (Math.hypot(x, y) < 8) return;
+    const heading = Math.round(Math.atan2(x, -y) * 180 / Math.PI);
+    previewRotation((heading + 360) % 360);
+  }
+
+  dial.addEventListener("pointerdown", (event) => {
+    if (pointer || event.button !== 0) return;
+    event.preventDefault();
+    dial.focus({ preventScroll: true });
+    dial.setPointerCapture(event.pointerId);
+    pointer = { id: event.pointerId, inputValue: headingInput.value };
+    aimDial(event);
+  });
+  dial.addEventListener("pointermove", (event) => {
+    if (pointer?.id === event.pointerId) aimDial(event);
+  });
+  dial.addEventListener("pointerup", (event) => {
+    if (pointer?.id !== event.pointerId) return;
+    pointer = undefined;
+    if (previewHeading !== undefined) commitRotation(previewHeading);
+  });
+  dial.addEventListener("lostpointercapture", (event) => {
+    if (pointer?.id !== event.pointerId) return;
+    headingInput.value = pointer.inputValue;
+    pointer = undefined;
+    previewHeading = undefined;
+    if (selected) drawHeading(values(selected).orientacion);
+    updateModel();
+  });
+  dial.addEventListener("keydown", (event) => {
+    if (pointer || !selected) return;
+    const steps = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1, PageDown: -15, PageUp: 15 };
+    const step = steps[event.key];
+    if (step === undefined && event.key !== "Home" && event.key !== "End") return;
+    event.preventDefault();
+    const heading = values(selected).orientacion;
+    const next = (Math.round(heading) + step + 360) % 360;
+    commitRotation(event.key === "Home" ? 0 : event.key === "End" ? 360 : next);
+  });
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();

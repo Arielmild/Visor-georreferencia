@@ -69,6 +69,16 @@
         <label><input id="marcadores" type="checkbox" checked disabled> Marcadores</label>
         <label><input id="modelos" type="checkbox" checked disabled> Modelo 3D</label>
       </div>
+      <div class="giro" id="giro" hidden>
+        <span id="giro-titulo">Girar modelo</span>
+        <div id="perilla" class="perilla" role="slider" tabindex="0" aria-labelledby="giro-titulo"
+             aria-describedby="giro-ayuda" aria-valuemin="0" aria-valuemax="360" aria-valuenow="0">
+          <span class="perilla-norte" aria-hidden="true">N</span>
+          <span class="perilla-indicador" aria-hidden="true"></span>
+          <span id="giro-grados" aria-hidden="true">0°</span>
+        </div>
+        <span id="giro-ayuda" class="giro-ayuda">Arrastra o usa las flechas</span>
+      </div>
       <div class="mapa-info">
         <div><span class="punto" aria-hidden="true"></span> <span id="terreno">Cargando mapa…</span></div>
         <div id="leyenda" class="leyenda" hidden><span><i class="punto" aria-hidden="true"></i> Parquímetro</span><span><i class="punto plaza" aria-hidden="true"></i> Plaza</span></div>

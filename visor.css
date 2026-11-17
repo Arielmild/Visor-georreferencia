@@ -101,7 +101,64 @@ summary { cursor: pointer; font-weight: 700; font-size: 14px; }
   padding: 8px 11px;
 }
 .herramientas label { display: flex; align-items: center; gap: 4px; }
+.giro {
+  position: absolute;
+  right: 15px;
+  bottom: 37px;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #101a17ee;
+  padding: 9px 7px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  user-select: none;
+}
+.giro[hidden] { display: none; }
+.perilla {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border: 1px solid #62776b;
+  border-radius: 50%;
+  background: radial-gradient(circle, #263c31 62%, #15241e 63%);
+  color: var(--accent);
+  cursor: grab;
+  touch-action: none;
+}
+.perilla:hover, .perilla:active { border-color: var(--accent); }
+.perilla:active { cursor: grabbing; }
+.perilla-norte {
+  position: absolute;
+  top: 13px;
+  color: var(--muted);
+  font: 10px var(--mono);
+}
+.perilla-indicador {
+  position: absolute;
+  inset: 0;
+  transform: rotate(var(--rumbo, 0deg));
+  pointer-events: none;
+}
+.perilla-indicador::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+#giro-grados { font: 600 14px var(--mono); }
+.giro-ayuda { color: var(--muted); font-size: 10px; font-weight: 400; }
 .mapa-info { position: absolute; bottom: 37px; left: 15px; right: 15px; width: fit-content; max-width: calc(100% - 30px); font-size: 12px; }
+.giro:not([hidden]) + .mapa-info { max-width: calc(100% - 153px); }
 .punto { display: inline-block; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-right: 4px; }
 .punto.plaza { background: #9ed8ff; }
 .leyenda { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 5px; color: var(--muted); }
