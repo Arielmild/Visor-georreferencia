@@ -83,6 +83,8 @@ summary { cursor: pointer; font-weight: 700; font-size: 14px; }
 .primary { background: var(--accent); color: #19281c; border-color: var(--accent); font-weight: 700; }
 .mapa { position: relative; min-height: 380px; overflow: hidden; background: #0c1717; }
 #globo { position: absolute; inset: 0; }
+#globo .modelo-desplazable { cursor: grab; }
+#globo .modelo-arrastrando { cursor: grabbing; }
 .herramientas {
   position: absolute;
   top: 15px;
@@ -164,6 +166,7 @@ summary { cursor: pointer; font-weight: 700; font-size: 14px; }
 .leyenda { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 5px; color: var(--muted); }
 .leyenda[hidden] { display: none; }
 #estado:not(:empty) { display: block; color: var(--muted); margin-top: 3px; }
+#mover-ayuda { color: var(--accent); margin-top: 3px; }
 @media (max-width: 720px) {
   .top { padding: 0 12px; }
   main { display: flex; flex-direction: column; min-height: 0; height: auto; }

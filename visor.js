@@ -125,14 +125,20 @@ async function main() {
   const dial = el("perilla");
   let pointer;
   let previewHeading;
+  let modelDrag;
+  let lastHover = -Infinity;
+  const canvas = scene.canvas;
+
+  function referenceFrame(site) {
+    const { longitud, latitud } = site.referencia;
+    return C.Transforms.eastNorthUpToFixedFrame(C.Cartesian3.fromDegrees(longitud, latitud));
+  }
 
   function placement(site) {
-    const { longitud, latitud } = site.referencia;
-    const adjustment = values(site);
+    const adjustment = (modelDrag?.site === site ? modelDrag.preview : undefined) ?? values(site);
     const model = catalogo[variantOf(site)];
-    const frame = C.Transforms.eastNorthUpToFixedFrame(C.Cartesian3.fromDegrees(longitud, latitud));
     const horizontal = C.Matrix4.multiplyByPoint(
-      frame, new C.Cartesian3(adjustment.este_m, adjustment.norte_m, 0), new C.Cartesian3(),
+      referenceFrame(site), new C.Cartesian3(adjustment.este_m, adjustment.norte_m, 0), new C.Cartesian3(),
     );
     const coord = C.Cartographic.fromCartesian(horizontal);
     // Cesium convierte Y arriba a Z arriba. Conservamos +X como eje longitudinal.
@@ -161,7 +167,7 @@ async function main() {
       url: url.href, scene, modelMatrix: placement(selected).matrix,
       heightReference: C.HeightReference.RELATIVE_TO_TERRAIN, scale: 1, minimumPixelSize: 0,
       enableVerticalExaggeration: false, upAxis: C.Axis.Y, forwardAxis: C.Axis.X,
-      shadows: C.ShadowMode.DISABLED, allowPicking: false, show: false,
+      shadows: C.ShadowMode.DISABLED, allowPicking: true, show: false,
     }).then((loaded) => {
       entry.model = scene.primitives.add(loaded);
       loaded.readyEvent.addEventListener(updateModel);
@@ -175,6 +181,9 @@ async function main() {
     el("giro").hidden = !active;
     const variant = active ? variantOf(selected) : null;
     const current = modelos.get(variant);
+    const canDrag = Boolean(active && current?.model?.ready);
+    el("mover-ayuda").hidden = !canDrag;
+    if (!canDrag) canvas.classList.remove("modelo-desplazable");
     for (const [key, { model }] of modelos) {
       if (!model) continue;
       model.show = key === variant;
@@ -192,7 +201,7 @@ async function main() {
   }
 
   async function focus() {
-    if (!selected) return;
+    if (!selected || modelDrag) return;
     const current = ++flightVersion;
     detail = true;
     const { coord, altitude } = placement(selected);
@@ -223,6 +232,7 @@ async function main() {
   }
 
   function overview() {
+    finishModelDrag();
     ++flightVersion;
     detail = false;
     viewer.camera.flyTo({ destination: overviewDestination(), orientation: topDown, duration: 0.85 });
@@ -262,6 +272,7 @@ async function main() {
   }
 
   function choose(variant) {
+    finishModelDrag();
     choices.set(selected.id, variant);
     saveLocal();
     updateLink();
@@ -306,6 +317,7 @@ async function main() {
   }
 
   function select(site) {
+    finishModelDrag();
     if (selected) pins.get(selected.id).point.pixelSize = 11;
     selected = site;
     pins.get(site.id).point.pixelSize = 17;
@@ -333,6 +345,7 @@ async function main() {
     const matches = (site) => (!type || type === site.tipo) &&
       normalizedText(`${site.id} ${site.calle} ${site.tramo}`).includes(query);
     if (selected && !matches(selected)) {
+      finishModelDrag();
       pins.get(selected.id).point.pixelSize = 11;
       selected = undefined;
       el("ficha").hidden = true;
@@ -374,6 +387,7 @@ async function main() {
   }
 
   function saveAdjustment(adjustment) {
+    finishModelDrag();
     const key = adjustmentKey(selected, variantOf(selected));
     if (adjustment) overrides.set(key, adjustment);
     else overrides.delete(key);
@@ -382,6 +396,126 @@ async function main() {
     populateForm();
     focus();
   }
+
+  function cursorPosition(event) {
+    const { left, top } = canvas.getBoundingClientRect();
+    return new C.Cartesian2(event.clientX - left, event.clientY - top);
+  }
+
+  function isOverModel(position) {
+    if (!detail || !selected || !el("modelos").checked) return false;
+    const model = modelos.get(variantOf(selected))?.model;
+    return Boolean(model?.ready && scene.pick(position, 1, 1)?.primitive === model);
+  }
+
+  function updateHorizontalFields(adjustment) {
+    for (const key of ["este_m", "norte_m"]) {
+      form.elements.namedItem(key).value = adjustment[key];
+    }
+  }
+
+  function finishModelDrag(commit = false) {
+    if (!modelDrag) return;
+    const drag = modelDrag;
+    modelDrag = undefined;
+    controller.enableInputs = drag.cameraEnabled;
+    canvas.classList.remove("modelo-arrastrando", "modelo-desplazable");
+    if (canvas.hasPointerCapture(drag.pointerId)) canvas.releasePointerCapture(drag.pointerId);
+    if (commit && drag.preview) {
+      overrides.set(adjustmentKey(drag.site, variantOf(drag.site)), drag.preview);
+      saveLocal();
+      updateLink();
+    } else if (drag.preview) {
+      updateHorizontalFields(drag.previousInputs);
+    }
+    updatePosition();
+    updateModel();
+  }
+
+  canvas.addEventListener("pointerdown", (event) => {
+    if (modelDrag || pointer || !event.isPrimary || event.button !== 0 ||
+        event.shiftKey || event.ctrlKey || event.altKey || event.metaKey) return;
+    const position = cursorPosition(event);
+    if (!isOverModel(position)) return;
+
+    const camera = viewer.camera;
+    const ray = camera.getPickRay(position);
+    const grabbed = (scene.pickPositionSupported && scene.pickPosition(position)) ||
+      scene.globe.pick(ray, scene);
+    if (!grabbed) return;
+    // Un plano horizontal por el punto agarrado conserva el agarre bajo el cursor.
+    const normal = scene.globe.ellipsoid.geodeticSurfaceNormal(grabbed);
+    const plane = C.Plane.fromPointNormal(grabbed, normal);
+    const start = C.IntersectionTests.rayPlane(ray, plane);
+    if (!start) return;
+    const frame = referenceFrame(selected);
+    const inverse = C.Matrix4.inverseTransformation(frame, new C.Matrix4());
+    const localStart = C.Matrix4.multiplyByPoint(inverse, start, new C.Cartesian3());
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    canvas.setPointerCapture(event.pointerId);
+    ++flightVersion;
+    camera.cancelFlight();
+    modelDrag = {
+      site: selected, pointerId: event.pointerId, position, plane, inverse, localStart,
+      adjustment: values(selected), cameraEnabled: controller.enableInputs,
+      previousInputs: {
+        este_m: form.elements.namedItem("este_m").value,
+        norte_m: form.elements.namedItem("norte_m").value,
+      },
+    };
+    controller.enableInputs = false;
+    canvas.classList.add("modelo-arrastrando");
+  }, true);
+
+  canvas.addEventListener("pointermove", (event) => {
+    const position = cursorPosition(event);
+    if (!modelDrag) {
+      if (event.buttons === 0 && event.pointerType === "mouse" && event.timeStamp - lastHover >= 50) {
+        lastHover = event.timeStamp;
+        canvas.classList.toggle("modelo-desplazable", isOverModel(position));
+      }
+      return;
+    }
+    if (event.pointerId !== modelDrag.pointerId) return;
+    event.stopImmediatePropagation();
+    if (!modelDrag.preview && C.Cartesian2.distance(position, modelDrag.position) < 3) return;
+    if (position.x < 0 || position.y < 0 || position.x >= canvas.clientWidth || position.y >= canvas.clientHeight) return;
+    const ray = viewer.camera.getPickRay(position);
+    if (Math.abs(C.Cartesian3.dot(ray.direction, modelDrag.plane.normal)) < 0.02) return;
+    const intersection = C.IntersectionTests.rayPlane(ray, modelDrag.plane);
+    if (!intersection) return;
+    const local = C.Matrix4.multiplyByPoint(modelDrag.inverse, intersection, new C.Cartesian3());
+    const { adjustment, localStart } = modelDrag;
+    const meters = (value, key) => Math.round(C.Math.clamp(value, ...fields[key]) * 100) / 100;
+    modelDrag.preview = {
+      ...adjustment,
+      este_m: meters(adjustment.este_m + local.x - localStart.x, "este_m"),
+      norte_m: meters(adjustment.norte_m + local.y - localStart.y, "norte_m"),
+    };
+    updateHorizontalFields(modelDrag.preview);
+    updatePosition();
+    updateModel();
+  }, true);
+
+  canvas.addEventListener("pointerup", (event) => {
+    if (event.pointerId !== modelDrag?.pointerId) return;
+    event.stopImmediatePropagation();
+    finishModelDrag(true);
+  }, true);
+  for (const name of ["pointercancel", "lostpointercapture"]) {
+    canvas.addEventListener(name, (event) => {
+      if (event.pointerId === modelDrag?.pointerId) finishModelDrag();
+    });
+  }
+  canvas.addEventListener("pointerleave", () => canvas.classList.remove("modelo-desplazable"));
+  window.addEventListener("blur", () => finishModelDrag());
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !modelDrag) return;
+    event.preventDefault();
+    finishModelDrag();
+  });
 
   function drawHeading(heading) {
     dial.style.setProperty("--rumbo", `${heading}deg`);
@@ -464,6 +598,7 @@ async function main() {
   el("acercar").addEventListener("click", focus);
   el("marcadores").addEventListener("change", drawList);
   el("modelos").addEventListener("change", () => {
+    finishModelDrag();
     if (el("modelos").checked && selected) {
       const variant = variantOf(selected);
       if (modelos.get(variant)?.failed) modelos.delete(variant);
